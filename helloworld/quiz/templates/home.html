@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<title>Home</title>
+	</head>
+
+	<body>
+		{% for x in my_number %}
+		<a href="/quiz/{{ x }}/">
+			<p>QUESTION {{ x }}</p>
+		</a>
+		{% endfor %}
+
+		<a href="/quiz/create/">
+			<p>CREATE QUESTION</p>
+		</a>
+	</body>
+
+</html>

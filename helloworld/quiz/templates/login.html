@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>Login</title>
+	</head>
+
+	<body>
+		<form action="/verify/" method="post">
+		{% csrf_token %}
+			<div>
+				<label for="asdf">Username</label>
+				<input id="asdf" type="text" name="loginstuff">
+			</div>
+
+			<div>
+				<label for="fdsa">Pass</label>
+				<input id="fdsa" type="text" name="mdp">
+			</div>
+		</form>
+	</body>
+
+</html>

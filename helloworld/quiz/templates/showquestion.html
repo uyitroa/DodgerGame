@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<title>Question {{ id_question }}</title>
+	</head>
+
+	<body>
+		<p>{{ string_question }}</p>
+		{% for x in choices %}
+			<p>{{ x }}</p>
+		{% endfor %}
+
+		<form action="/quiz/check/{{ id_question }}/" method="post">
+		{% csrf_token %}
+			<input id="example" type="text" name="answer">
+		</form>
+	</body>
+</html>

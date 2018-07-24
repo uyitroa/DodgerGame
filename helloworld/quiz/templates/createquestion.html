@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>Creating question</title>
+	</head>
+
+	<body>
+		<form action="/quiz/test/" method="post">
+		{% csrf_token %}
+			<div>
+				<label for="example">Question</label>
+				<input id="example" type="text" name="question">
+			</div>
+
+			<div>
+				<label for="choose">Choices</label>
+				<input id="choose" type="text" name="choices">
+			</div>
+
+			<div>
+				<label for="idk">Answer</label>
+				<input id="idk" type="text" name="answer">
+                        </div>
+
+			<div>
+				<input type="submit" value="Send" accesskey="s">
+			</div>
+		</form>
+	</body>
+
+</html>
